@@ -20,7 +20,8 @@ echo $resource;
 function getAccessToken()
 {
     global $auth_url, $token_url, $client_id, $client_secret;
-
+// client_credentials
+// ameise/mitarbeiterwebservice
     $content = "grant_type=client_credentials&scope=ameise/mitarbeiterwebservice";
     $authorization =base64_encode("$client_id:$client_secret");
 
